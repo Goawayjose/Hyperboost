@@ -1,3 +1,9 @@
+@font-face {
+  font-family: AksizenzLight;
+  src: url(../font/AkzidGroBEligOsF.otf); }
+div {
+  font-family: AksizenzLight; }
+
 .dashMap {
   position: relative;
   overflow: hidden; }
@@ -8,7 +14,7 @@
   left: -405px; }
 
 .dash {
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center; }
   .dash p {
     margin-left: 20px;
@@ -50,26 +56,180 @@
 
 .circle {
   display: none;
-  padding-top: 74px;
+  padding-top: 40px;
   text-align: center;
   justify-content: center;
-  margin-left: -150px;
+  margin-left: -100px;
   left: 50%;
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   border-radius: 200px;
   position: relative;
   display: flex;
   background-color: white;
   border-top: 2px solid black;
   border-left: 2px solid black;
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
   margin-bottom: 1rem; }
   .circle .speed {
     font-weight: bold;
-    font-size: 104px;
+    font-size: 78px;
     float: left; }
   .circle #mph {
-    line-height: 184px;
-    font-size: 24px; }
+    line-height: 140px;
+    font-size: 16px;
+    margin-left: 2px; }
+
+.circle.onHype {
+  margin-top: 55px;
+  background: transparent;
+  color: white;
+  border-top: 2px solid white;
+  border-left: 2px solid white; }
+
+.speedometer {
+  display: none; }
+
+.show {
+  display: block !important; }
+
+.dash .dashCard.HypeStart {
+  width: 320px;
+  margin-left: -15px; }
+
+.dash .dashCard.HypeStart.HypeOn {
+  transition: all 0.5s ease-out;
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 540px; }
+
+.dashboardContainer {
+  height: 100vh;
+  border: 1px solid black;
+  overflow: hidden; }
+
+.btn-hyperstop {
+  display: none; }
+
+.btn-autoStop {
+  display: block; }
+
+.appContainer {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll; }
+
+.pastTrip,
+.suggestedTrip {
+  width: calc(100vw - 20px);
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.car {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.suggestedTrip {
+  float: left;
+  margin-left: 15px; }
+
+.Trips {
+  padding-top: 15px;
+  background: white;
+  height: calc(100vh - 100px);
+  position: absolute;
+  width: 100vw;
+  overflow: scroll;
+  margin-top: 100px; }
+
+.scheduleBtn {
+  margin-top: 15px; }
+
+.LongRow {
+  width: calc(200vw + 10px); }
+
+.card {
+  padding: 15px;
+  margin-bottom: 15px; }
+
+.topCon {
+  position: fixed;
+  height: 300px; }
+
+.emptyTop {
+  height: 300px; }
+
+footer {
+  background: white;
+  width: 100vw;
+  left: 0px;
+  position: fixed;
+  bottom: 0px;
+  text-align: center; }
+
+.mapCon {
+  padding-left: 0px;
+  padding-right: 0px; }
+  .mapCon img.background {
+    width: 100%;
+    position: fixed; }
+
+.foot {
+  height: 140px;
+  transition: height 0.4s ease-out;
+  position: fixed;
+  bottom: 0;
+  background: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px; }
+  .foot .btn {
+    width: 100%; }
+
+.footOn {
+  height: 376px; }
+
+.purchase {
+  display: none;
+  width: 100%;
+  padding: 15px; }
+
+.barz {
+  display: none;
+  position: relative;
+  top: -6px;
+  left: 6px;
+  width: 100%;
+  height: 7px;
+  background: grey;
+  border-radius: 30px; }
+
+.buybtn {
+  padding-top: 15px;
+  position: absolute;
+  z-index: 99;
+  width: 100vw;
+  background: rgba(255, 255, 255, 0);
+  padding-bottom: 25px;
+  left: 0px;
+  margin-top: 65px;
+  animation: movebtn 1s ease-out forwards; }
+
+@keyframes movebtn {
+  0% {
+    margin-top: 65px;
+    background: rgba(255, 255, 255, 0); }
+  50% {
+    margin-top: 65px;
+    background: rgba(255, 255, 255, 0); }
+  100% {
+    margin-top: 0px;
+    background: white; } }
 
 /*# sourceMappingURL=main.css.map */
